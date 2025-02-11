@@ -69,12 +69,24 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .address-box {
+    border-radius: 8px;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    word-wrap: break-word; /* Ensure text breaks to next line */
+    word-break: break-word; /* Ensure long words break correctly */
+  }
+  
 
   /* Media Query for Smaller Screens */
   @media (max-width: 480px) {
   .address-container {
     width: 90%;
     padding: 15px;
+  }
+  .address-box {
+    max-width: 100%;
   }
   }
   
