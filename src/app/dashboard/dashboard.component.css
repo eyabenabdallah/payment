@@ -126,6 +126,7 @@
   .centered-image {
     max-width: 50%; /* Makes the image responsive */
     height: auto; /* Keeps the aspect ratio of the image */
+    justify-content: center;
   }
   
   .info-box {
@@ -142,13 +143,18 @@
     font-size: 16px; /* Adjust font size */
   }
   .logo-container {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  margin-top: 20px; /* Add margin on top for spacing */
+  padding: 20px; /* Optional padding for spacing */
   }
   
   .logo {
     width: 200px; /* Adjust the size as needed */
     height: auto;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
   }
   
