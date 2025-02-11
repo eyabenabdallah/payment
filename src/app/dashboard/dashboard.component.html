@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+
+<div class="payment-confirmation">
+    <div class="logo1-container">
+        <img src="assets/logo2.jpg" alt="Logo" class="logo">
+      </div>
+    <h2>Deposit Confirmation</h2>
+    
+    <div class="payment-details" dir="rtl">
+      <p><strong>قيمة الايداع:</strong> {{ amount | currency:'USDT ':true }}</p>
+      <p><strong>معدل التحويل:  </strong> {{ amountPaid  }}</p>
+      <p><strong>الشبكة: </strong> {{ paymentMethod }}</p>
+      <p>{{ transactionId }}</p>
+    </div>
+    <div class="address-section">
+        <p dir="rtl"><strong>انسخ العنوان أو امسح رمز الاستجابة السريعة. 
+        </strong></p>
+        <div class="address-container">
+            <div class="address-box">
+              <p id="billing-address">TBmHGihaT3BV6PXy15urLHekc1ha3JWoWY</p>
+            </div>
+            <button class="copy-button" (click)="copyToClipboard()">
+              <i class="fas fa-copy"></i>
+            </button>
+            <!-- Hidden "Copied" message -->
+            <span class="copied-message" *ngIf="isCopied">Copied</span>
+        </div>          
+          
+    </div>
+    <!-- Image below the address box -->
+    <div class="image-container">
+        <img src="assets/sample-image.jpg" alt="Sample Image" class="centered-image" />
+    </div>
+
+    <div class="info-box" dir="rtl">
+        <p>الحد الأدنى لمبلغ الإيداع USDT 10,000.00<br>يرجى ملاحظة أن سعر الصرف عند إتمام المعاملة قد يختلف عما ورد أعلاه</p>
+      </div>
+    
+    <!--button class="back-button" (click)="goBack()">Back to Dashboard</button>
+  </div!--> 
+  

@@ -1,0 +1,27 @@
+<br>
+<br>
+<div class="logo1-container">
+  <img src="assets/logo2.jpg" alt="Logo" class="logo">
+</div>
+<br>
+<br>
+<body>
+    <div class="wrapper">
+      
+      <form (ngSubmit)="onSubmit()">
+        <div class="field">
+          <input type="text" required [(ngModel)]="Id" name="Id" placeholder=" ">
+          <label>Id</label>
+        </div>
+        <div class="field">
+          <input type="number" required [(ngModel)]="amount" name="amount" placeholder=" ">
+          <label>Amount</label>
+        </div>
+        <div class="field">
+          <input type="submit" value="PAY">
+        </div>
+        
+      </form>
+    </div>
+  </body>
+  
