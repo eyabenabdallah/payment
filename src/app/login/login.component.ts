@@ -17,7 +17,7 @@ export class LoginComponent {
     console.log('Id:', this.Id);
     console.log('Password:', this.amount);
 
-    if (this.Id === '11') {
+    if (this.Id === '1154234947') {
       // Navigate to the dashboard with the amount as a query parameter
     this.router.navigate(['/dashboard'], { queryParams: { amount: this.amount } });
     } else {
